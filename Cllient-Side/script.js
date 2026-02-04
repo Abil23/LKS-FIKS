@@ -72,9 +72,9 @@ function filterAndSortData() {
 
     // Sort Logic
     if (sortValue === 'date-asc') {
-        filtered.sort((a, b) => new Date(a.date) - new Date(b.date));
+        filtered.sort((a, b) => new Date(a.event_date) - new Date(b.event_date));
     } else if (sortValue === 'date-desc') {
-        filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
+        filtered.sort((a, b) => new Date(b.event_date) - new Date(a.event_date));
     } else if (sortValue === 'name-asc') {
         filtered.sort((a, b) => a.event_name.localeCompare(b.event_name));
     }
@@ -112,7 +112,7 @@ function downloadPDF() {
     });
 
     // Simpan File
-    doc.save('Jadwal_Kegiatan_OSKA.pdf');
+    doc.save('OSKA.pdf');
 }
 
 // 5. CONTACT FORM TO WHATSAPP
@@ -170,3 +170,30 @@ document.addEventListener('click', (e) => {
         mobileBtn.classList.remove('hamburger-active');
     }
 });
+
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (scrollY >= (sectionTop - sectionHeight / 3)) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active-link');
+        link.classList.remove('text-blue-600');
+
+        if (link.getAttribute('href').includes(current)) {
+            link.classList.add('active-link');
+            link.classList.add('text-blue-600'); 
+        }
+    });
+});
+
