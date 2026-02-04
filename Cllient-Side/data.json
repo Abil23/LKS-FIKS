@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "event_name": "Rapat Pleno Triwulan",
+    "date": "2024-03-15",
+    "organizer": "BPH Inti",
+    "description": "Evaluasi kinerja pengurus periode awal."
+  },
+  {
+    "id": 2,
+    "event_name": "Class Meeting Semester Genap",
+    "date": "2024-06-10",
+    "organizer": "Sekbid 4 (Olahraga)",
+    "description": "Lomba futsal dan basket antar kelas."
+  },
+  {
+    "id": 3,
+    "event_name": "Bakti Sosial Ramadhan",
+    "date": "2024-04-05",
+    "organizer": "Sekbid 1 (Agama)",
+    "description": "Pembagian takjil dan santunan anak yatim."
+  },
+  {
+    "id": 4,
+    "event_name": "Latihan Dasar Kepemimpinan (LDK)",
+    "date": "2024-08-20",
+    "organizer": "Sekbid 2 (Bela Negara)",
+    "description": "Pelatihan calon pengurus OSIS baru."
+  },
+  {
+    "id": 5,
+    "event_name": "Pentas Seni (PENSI) Akbar",
+    "date": "2024-11-10",
+    "organizer": "Sekbid 5 (Seni)",
+    "description": "Festival musik dan pameran karya siswa."
+  },
+  {
+    "id": 6,
+    "event_name": "Workshop Jurnalistik",
+    "date": "2024-05-12",
+    "organizer": "Sekbid 3 (Sastra)",
+    "description": "Pelatihan fotografi dan penulisan berita."
+  },
+  {
+    "id": 7,
+    "event_name": "Upacara Hari Pahlawan",
+    "date": "2024-11-10",
+    "organizer": "Paskibra & OSIS",
+    "description": "Petugas upacara gabungan."
+  },
+  {
+    "id": 8,
+    "event_name": "Donor Darah Rutin",
+    "date": "2024-09-15",
+    "organizer": "PMR & Sekbid 7",
+    "description": "Kerjasama dengan PMI Kota."
+  }
+]
